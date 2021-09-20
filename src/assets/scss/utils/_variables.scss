@@ -1,0 +1,24 @@
+@use 'functions' as *;
+
+// Colors
+$dark-gray-blue: hsl(217, 19%, 35%);
+$desaturated-dark-blue: hsl(214, 17%, 51%);
+$gray-blue: hsl(212, 23%, 69%);
+$light-gray-blue: hsl(210, 46%, 95%);
+
+// Colors pallete
+$colors: (
+  "dark": $dark-gray-blue,
+  "light": $light-gray-blue,
+  "desaturated": $desaturated-dark-blue,
+  "gray": $gray-blue,
+);
+
+// Font sizes
+$base-font-size: rem(15) !default;
+
+// Border Radius
+$base-border-radius: rem(8) !default;
+
+// Box-Shadow
+$base-box-shadow: 0 rem(20) rem(30) rgba(158, 175, 194, 0.25);

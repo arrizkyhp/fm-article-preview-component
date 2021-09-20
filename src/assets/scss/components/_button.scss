@@ -1,0 +1,15 @@
+@use '../utils' as *;
+
+.btn {
+  outline: none;
+
+  width: rem(35);
+  height: rem(35);
+  border-radius: 50%;
+  border: none;
+
+  &::after {
+    content: url(assets/images/icon-share.svg);
+    width: rem(15);
+  }
+}
