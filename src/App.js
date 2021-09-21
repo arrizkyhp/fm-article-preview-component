@@ -6,7 +6,7 @@ import Home from 'pages/Home';
 
 function App() {
   return (
-    <Router basename="/">
+    <Router basename="/fm-article-preview-component">
       <Route exact path="/" component={Home} />
     </Router>
   );
