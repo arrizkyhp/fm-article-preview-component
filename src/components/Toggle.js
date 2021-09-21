@@ -18,7 +18,6 @@ let useClickOutside = (handler) => {
     const listBox = document.querySelector(".listBox");
 
     let maybeHandler = (event) => {
-      console.log(event.target)
 
 
       if (
@@ -65,7 +64,7 @@ export default function Toggle() {
 
   return (
     <div ref={domNode} className="toggle-social-media">
-      <Button className={`btn bg-light ${isOpen ? "active" : ""}`} isPrimary onClick={handleToggle} aria-expanded={isOpen ? "true" : "false"} aria-controls="notifications-label" aria-label="share article"></Button>
+      <Button className={`btn bg-light ${isOpen ? "active" : ""}`} isPrimary onClick={handleToggle} ariaExpanded={isOpen ? "true" : "false"} ariaControls="notifications-label" ariaLabel="share article"></Button>
       {isTabletOrMobile && (
         <div className={`balloon ${isOpen ? "active" : ""}`} style={{ top: -17, left: -258 }} id="notifications-label">
           <div className="balloon__content">

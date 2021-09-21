@@ -1,7 +1,7 @@
 const Attribution = () => {
   return (
-
-      <p className="attribution">
+    <footer>
+      <p  className="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">
           {" "}
@@ -13,7 +13,7 @@ const Attribution = () => {
           Arrizky Hasya Pratama.{" "}
         </a>
       </p>
-
+    </footer>
   );
 };
 

@@ -1,10 +1,9 @@
 import Moment from 'react-moment';
-import Button from 'components/Button';
 import Toggle from 'components/Toggle';
 
 const Article = ({ data }) => {
     const articleAPI = data[0];
-    console.log(articleAPI.writer[0].imageUrl)
+
     return (
       <>
         <section className="drawer">
