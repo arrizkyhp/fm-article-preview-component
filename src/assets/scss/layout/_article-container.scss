@@ -9,4 +9,15 @@ main {
   max-width: rem(720);
 
   overflow: hidden;
+
+  @include breakpoint-max(md) {
+    max-width: rem(550);
+    margin: 0 rem(20);
+  }
+
+  @include breakpoint-max(sm) {
+    flex-direction: column;
+    margin: 0 0;
+    max-width: rem(328);
+  }
 }

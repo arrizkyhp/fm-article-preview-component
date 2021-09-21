@@ -1,9 +1,5 @@
 @use '../utils' as *;
 
-.ToolTip {
-  background-color: $dark-gray-blue;
-}
-
 button {
   cursor: pointer;
 }
@@ -13,21 +9,71 @@ button {
 }
 
 .balloon {
-  padding: 50px;
+  padding: rem(17) rem(25);
   position: absolute;
   background-color: $dark-gray-blue;
   min-width: 224px;
-  min-height: 66px;
-  // margin-left: -75%;
-  display: none;
-  right: calc(100vw - 800px);
-  // bottom: 100%;
-  z-index: 1000;
-}
+  max-height: 52px;
 
-.balloon.active {
-  display: block;
-  animation: fade_in_show 0.3s;
+  display: none;
+  border-radius: $base-border-radius;
+  z-index: 1000;
+
+  &.active {
+    display: block;
+    animation: fade_in_show 0.3s;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &__share {
+      letter-spacing: 0.425em;
+      color: $gray-blue;
+      font-size: rem(13);
+      text-transform: uppercase;
+    }
+
+    ul {
+      li {
+        display: inline-block;
+        padding-left: rem(15);
+
+        a {
+          img {
+            width: rem(18);
+          }
+        }
+      }
+    }
+
+    @include breakpoint-max(sm) {
+      align-items: center;
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -20%;
+    left: 40%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-top: 20px solid $dark-gray-blue;
+  }
+
+  @include breakpoint-max(sm) {
+    border-radius: 0;
+    padding: rem(17) rem(35);
+    min-height: rem(180);
+    min-width: rem(328);
+  }
 }
 
 @keyframes fade_in_show {

@@ -7,9 +7,24 @@
   height: rem(35);
   border-radius: 50%;
   border: none;
+  transition: all 0.3s ease-in-out;
 
   &::after {
     content: url(assets/images/icon-share.svg);
     width: rem(15);
+  }
+
+  &.active {
+    background: $dark-gray-blue;
+
+    &::after {
+      content: url(assets/images/icon-share-white.svg);
+      width: rem(15);
+    }
+  }
+
+  &.btn-click {
+    background-color: $desaturated-dark-blue;
+    margin-left: rem(40);
   }
 }

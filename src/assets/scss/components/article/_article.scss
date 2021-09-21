@@ -11,6 +11,21 @@
     min-width: 362px;
     width: 100%;
     object-fit: contain;
+
+    @include breakpoint-max(md) {
+      height: fit-content;
+      min-width: rem(580);
+      left: -40%;
+    }
+
+    @include breakpoint-max(sm) {
+      min-width: rem(328);
+      left: 0;
+    }
+  }
+
+  @include breakpoint-max(sm) {
+    height: rem(220);
   }
 }
 
@@ -22,11 +37,19 @@
     h1 {
       font-size: rem(20);
       margin-bottom: rem(15);
+
+      @include breakpoint-max(sm) {
+        font-size: rem(16);
+      }
     }
 
     p {
       font-size: rem(13);
       line-height: rem(20);
+    }
+
+    @include breakpoint-max(sm) {
+      margin-bottom: rem(30);
     }
   }
 
@@ -49,10 +72,15 @@
         h2 {
           font-size: rem(13);
         }
-
-        span {
-        }
       }
     }
+  }
+
+  @include breakpoint-max(sm) {
+    margin-right: rem(35);
+  }
+
+  @include breakpoint-max(sm) {
+    margin-bottom: rem(20);
   }
 }
