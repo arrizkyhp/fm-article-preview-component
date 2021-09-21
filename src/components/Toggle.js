@@ -65,9 +65,9 @@ export default function Toggle() {
 
   return (
     <div ref={domNode} className="toggle-social-media">
-      <Button className={`btn bg-light ${isOpen ? "active" : ""}`} isPrimary onClick={handleToggle} aria-expanded={isOpen ? "true" : "false"} aria-controls="notifications-label"></Button>
-      {isTabletOrMobile &&
-         <div className={`balloon ${isOpen ? "active" : ""}`} style={{ top: -17 , left: -258 }} id="notifications-label">
+      <Button className={`btn bg-light ${isOpen ? "active" : ""}`} isPrimary onClick={handleToggle} aria-expanded={isOpen ? "true" : "false"} aria-controls="notifications-label" aria-label="share article"></Button>
+      {isTabletOrMobile && (
+        <div className={`balloon ${isOpen ? "active" : ""}`} style={{ top: -17, left: -258 }} id="notifications-label">
           <div className="balloon__content">
             <span className="balloon__content__share">Share</span>
             <ul role="listbox">
@@ -87,36 +87,36 @@ export default function Toggle() {
                 </a>
               </li>
             </ul>
-                <Button className={`btn btn-click bg-light ${isOpen ? "active" : ""}`} isPrimary onClick={handleToggle} aria-expanded={isOpen ? "true" : "false"} aria-controls="notifications-label"></Button>
+            <Button className={`btn btn-click bg-light ${isOpen ? "active" : ""}`} isPrimary onClick={handleToggle} aria-expanded={isOpen ? "true" : "false"} aria-controls="notifications-label" aria-label="share article"></Button>
           </div>
         </div>
-      }
-      {isBigScreen &&
-      <Baloon>
-        <div className={`balloon ${isOpen ? "active" : ""}`} style={{ top: isButtonY - 75, left: isButtonX - 95 }} id="notifications-label">
-          <div className="balloon__content">
-            <span className="balloon__content__share">Share</span>
-            <ul role="listbox">
-              <li>
-                <a className="share-link" href="#test">
-                  <img className="icon-link" src={facebookIcon} alt="" />
-                </a>
-              </li>
-              <li>
-                <a className="share-link" href="#test">
-                  <img className="icon-link" src={twitterIcon} alt="" />
-                </a>
-              </li>
-              <li>
-                <a className="share-link" href="#test">
-                  <img className="icon-link" src={pinterestIcon} alt="" />
-                </a>
-              </li>
-            </ul>
+      )}
+      {isBigScreen && (
+        <Baloon>
+          <div className={`balloon ${isOpen ? "active" : ""}`} style={{ top: isButtonY - 75, left: isButtonX - 95 }} id="notifications-label">
+            <div className="balloon__content">
+              <span className="balloon__content__share">Share</span>
+              <ul role="listbox">
+                <li>
+                  <a className="share-link" href="#test">
+                    <img className="icon-link" src={facebookIcon} alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a className="share-link" href="#test">
+                    <img className="icon-link" src={twitterIcon} alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a className="share-link" href="#test">
+                    <img className="icon-link" src={pinterestIcon} alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </Baloon>
-      }
+        </Baloon>
+      )}
     </div>
   );
 }
