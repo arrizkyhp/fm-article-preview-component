@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fm-article-preview-component/static/css/main.f0d6f745.chunk.css",
+    "main.css": "/fm-article-preview-component/static/css/main.7971ab9f.chunk.css",
     "main.js": "/fm-article-preview-component/static/js/main.0a8f324d.chunk.js",
     "main.js.map": "/fm-article-preview-component/static/js/main.0a8f324d.chunk.js.map",
     "runtime-main.js": "/fm-article-preview-component/static/js/runtime-main.5d483cb8.js",
@@ -8,7 +8,7 @@
     "static/js/2.8b545385.chunk.js": "/fm-article-preview-component/static/js/2.8b545385.chunk.js",
     "static/js/2.8b545385.chunk.js.map": "/fm-article-preview-component/static/js/2.8b545385.chunk.js.map",
     "index.html": "/fm-article-preview-component/index.html",
-    "static/css/main.f0d6f745.chunk.css.map": "/fm-article-preview-component/static/css/main.f0d6f745.chunk.css.map",
+    "static/css/main.7971ab9f.chunk.css.map": "/fm-article-preview-component/static/css/main.7971ab9f.chunk.css.map",
     "static/js/2.8b545385.chunk.js.LICENSE.txt": "/fm-article-preview-component/static/js/2.8b545385.chunk.js.LICENSE.txt",
     "static/media/icon-facebook.1e9b3338.svg": "/fm-article-preview-component/static/media/icon-facebook.1e9b3338.svg",
     "static/media/icon-pinterest.45264b1d.svg": "/fm-article-preview-component/static/media/icon-pinterest.45264b1d.svg",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.5d483cb8.js",
     "static/js/2.8b545385.chunk.js",
-    "static/css/main.f0d6f745.chunk.css",
+    "static/css/main.7971ab9f.chunk.css",
     "static/js/main.0a8f324d.chunk.js"
   ]
 }
